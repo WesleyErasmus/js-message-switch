@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+.app-wrapper {
+    max-width: 536px;
+    margin: 0 auto;
+    min-width: 275px;
+    width: 100%;
+    position: relative;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    position: fixed;
+    max-width: 536px;
+    width: 100%;
+    background: #dee4f1;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.main-user-header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.main-user-profile-picture {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-user-inner-body {
+    padding: 12px;
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-user-name {
+    font-weight: 700;
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+
+.main-user-text-container {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.main-user-text {
+    font-size: 11px;
+}
+
+.active-user-icon {
+    font-size: 7px;
+    margin: 0 5px 2px 0;
+    color: green;
+}
+
+.footer-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff464627;
+    margin: 20px 0 30px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.footer-text-container {
+    margin: 0 10px;
+    width: 75%;
+}
+
+.footer-inner-flex-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-clear-chat-header-text {
+    font-weight: 600;
+}
+
+.footer-subtitle-text {
+    font-size: 11px;
+    color: #ff0000;
+}
+
+.footer-clear-chats-button {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.clear-chats-button-icon-container {
+    font-size: 22px;
+}
+
+#clear-chats-button {
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    color: #ff0000;
+}
+
+/* Media query for screen size of 536px and larger */
+@media only screen and (min-width: 536px) {
+    .app-header {
+        border-radius: 25px;
+    }
+}

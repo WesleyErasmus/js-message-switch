@@ -1,0 +1,261 @@
+.app-wrapper {
+    position: relative;
+    background: #fff;
+    max-width: 536px;
+    min-width: 275px;
+    height: 100% !important;
+    margin: 0 auto;
+}
+
+.app-header {
+    position: fixed;
+    max-width: 536px;
+    min-width: 275px;
+    width: 100%;
+    top: 0px;
+    align-items: center;
+    z-index: 2;
+    background-color: #fffffff6;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.message-scroll {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    height: 100%;
+}
+
+.contact-header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dee4f1;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 10px 0px;
+}
+
+.header-inner-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-back-btn {
+    padding: 0 8px !important;
+}
+
+.top-chevron-back-icon {
+    padding: 0 !important;
+}
+
+.header-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 7px 10px 7px 0;
+}
+
+.contact-user-name {
+    font-size: 15.7px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.contact-text-container {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.contact-user-text {
+    font-size: 10px;
+    color: #77757e;
+}
+
+.active-user-icon {
+    font-size: 7px;
+    margin-right: 5px;
+    color: rgb(24, 194, 24);
+    margin-bottom: 2px;
+}
+
+.header-section-actions {
+    margin: 0 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.impersonate-recipient-btn {
+    font-size: 12px !important;
+    color: #fff !important;
+    background-color: #A3D8F6 !important;
+    font-weight: 600 !important;
+    border: 1px solid #99d4f7 !important;
+    border-radius: 25px !important;
+    padding: 8px 12px !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.message-container {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sent-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin: 10px 23px;
+}
+
+.message-content {
+    float: right;
+}
+
+.message-content-right {
+    float: right;
+}
+
+.message-content-left {
+    float: left;
+    flex-direction: row !important;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-right: 0 !important;
+}
+
+.message-sender-picture {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 15px;
+}
+
+.message-text {
+    font-size: 13px;
+    margin: 3px 0;
+    padding: 5px 12px;
+    word-wrap: break-word;
+    max-width: 65dvw;
+}
+
+.main-user-message-bubble {
+    background: #CDC3FC;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    max-width: 70dvw;
+}
+
+.main-user-message-bubble::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -9px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 16px 6px 10px;
+    border-color: transparent transparent #CDC3FC transparent;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.selected-contact-message-bubble {
+    background: #F3F5F6;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    max-width: 70dvw;
+}
+
+.selected-contact-message-bubble::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -9px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 6px 16px;
+    border-color: transparent transparent #F3F5F6 transparent;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/* Footer - send message component */
+.send-message-textarea-container {
+    position: fixed !important;
+    bottom: 0px !important;
+    max-width: 536px;
+    min-width: 275px;
+    width: 100%;
+    background: #F3F5F6;
+    background: #dbdbdb;
+    padding-bottom: env(safe-area-inset-bottom)
+}
+
+.send-message-input-bar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 5px 10px 5px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: none !important;
+    resize: none !important;
+    outline: none !important;
+    font-size: 13px !important;
+    padding: 10px 16px !important;
+    margin-bottom: 15px !important;
+    width: 100%;
+    overflow: hidden;
+    max-height: 150px !important;
+}
+
+textarea::placeholder {
+    font-size: 13px;
+}
+
+#sendMessageBtn {
+    margin-bottom: 10px;
+}
+
+.send-message-icon {
+    transform: rotate(45deg);
+    color: #8166fc;
+}
+
+@media only screen and (min-width: 536px) {
+
+    .app-header,
+    .contact-header-info {
+        border-radius: 25px;
+    }
+
+    .send-message-textarea-container {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+    }
+}

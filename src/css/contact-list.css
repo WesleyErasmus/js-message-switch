@@ -1,0 +1,74 @@
+.my-contacts-component-wrapper {
+    margin: 0px 0px 15px 0px;
+    padding: 15px 0px;
+    border-radius: 25px;
+}
+
+.header-flex-container {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0 0 12px 20px;
+    margin: 90px 0 0 0;
+}
+
+.top-contacts-header-icon {
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.header-text {
+    margin: 0 8px;
+}
+
+.my-contacts-header {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.contact-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin: 0px 10px;
+    padding: 2px 2px 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.contact-body {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.contact-profile-picture {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 7px;
+}
+
+.contact-name {
+    font-weight: 600;
+    margin: 0 5px;
+    font-size: 15.6px;
+}
+
+.messages {
+    font-size: 10px;
+    margin: 0 5px;
+    color: #77757e;
+}
+
+.contact-options-icon {
+    font-size: 18px;
+}
+
+/* Media query for screen size of 536px and larger */
+@media only screen and (min-width: 536px) {
+    .header-flex-container {
+        margin-top: 98px;
+    }
+}
