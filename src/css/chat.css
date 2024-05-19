@@ -156,7 +156,7 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     position: relative;
-    max-width: 70dvw;
+    max-width: 75%;
 }
 
 .main-user-message-bubble::before {
@@ -180,7 +180,7 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     position: relative;
-    max-width: 70dvw;
+    max-width: 75%;
 }
 
 .selected-contact-message-bubble::before {
